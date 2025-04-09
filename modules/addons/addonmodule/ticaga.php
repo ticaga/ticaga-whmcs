@@ -174,13 +174,13 @@ function addonmodule_deactivate()
  */
 function addonmodule_upgrade($vars)
 {
-    $currentlyInstalledVersion = $vars['version'];
+    $current_version = $vars['version'];
 
     /// Perform SQL schema changes required by the upgrade to version 1.1 of your module
-    if ($currentlyInstalledVersion < 1.1) {
+    if ($current_version < 1.1) {
         $schema = Capsule::schema();
         // Alter the table and add a new text column called "demo2"
-        $schema->table('mod_addonexample', function($table) {
+        $schema->table('mod_ticaga', function($table) {
             $table->text('demo2');
         });
     }
