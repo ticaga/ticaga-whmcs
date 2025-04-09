@@ -34,8 +34,8 @@
  */
 
 use WHMCS\Database\Capsule;
-use WHMCS\Module\Addon\AddonModule\Admin\AdminDispatcher;
-use WHMCS\Module\Addon\AddonModule\Client\ClientDispatcher;
+use WHMCS\Module\Addon\TicagaModule\Admin\AdminDispatcher;
+use WHMCS\Module\Addon\TicagaModule\Client\ClientDispatcher;
 
 if (!defined("WHMCS")) {
     die("This file cannot be accessed directly");
