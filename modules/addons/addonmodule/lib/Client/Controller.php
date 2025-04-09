@@ -22,12 +22,8 @@ class Controller {
         $LANG = $vars['_lang']; // an array of the currently loaded language variables
 
         // Get module configuration parameters
-        $configTextField = $vars['Text Field Name'];
-        $configPasswordField = $vars['Password Field Name'];
-        $configCheckboxField = $vars['Checkbox Field Name'];
-        $configDropdownField = $vars['Dropdown Field Name'];
-        $configRadioField = $vars['Radio Field Name'];
-        $configTextareaField = $vars['Textarea Field Name'];
+        $api_key = $vars['api_key'];
+        $api_url = $vars['api_url'];
 
         return array(
             'pagetitle' => 'Sample Addon Module',
@@ -60,12 +56,8 @@ class Controller {
         $LANG = $vars['_lang']; // an array of the currently loaded language variables
 
         // Get module configuration parameters
-        $configTextField = $vars['Text Field Name'];
-        $configPasswordField = $vars['Password Field Name'];
-        $configCheckboxField = $vars['Checkbox Field Name'];
-        $configDropdownField = $vars['Dropdown Field Name'];
-        $configRadioField = $vars['Radio Field Name'];
-        $configTextareaField = $vars['Textarea Field Name'];
+        $api_key = $vars['api_key'];
+        $api_url = $vars['api_url'];
 
         return array(
             'pagetitle' => 'Sample Addon Module',
