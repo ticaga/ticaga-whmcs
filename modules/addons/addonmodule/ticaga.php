@@ -237,12 +237,8 @@ function addonmodule_sidebar($vars)
     $_lang = $vars['_lang'];
 
     // Get module configuration parameters
-    $configTextField = $vars['Text Field Name'];
-    $configPasswordField = $vars['Password Field Name'];
-    $configCheckboxField = $vars['Checkbox Field Name'];
-    $configDropdownField = $vars['Dropdown Field Name'];
-    $configRadioField = $vars['Radio Field Name'];
-    $configTextareaField = $vars['Textarea Field Name'];
+    $api_key = $vars['api_key'];
+    $api_url = $vars['api_url'];
 
     $sidebar = '<p>Sidebar output HTML goes here</p>';
     return $sidebar;
@@ -268,12 +264,8 @@ function addonmodule_clientarea($vars)
     $_lang = $vars['_lang']; // an array of the currently loaded language variables
 
     // Get module configuration parameters
-    $configTextField = $vars['Text Field Name'];
-    $configPasswordField = $vars['Password Field Name'];
-    $configCheckboxField = $vars['Checkbox Field Name'];
-    $configDropdownField = $vars['Dropdown Field Name'];
-    $configRadioField = $vars['Radio Field Name'];
-    $configTextareaField = $vars['Textarea Field Name'];
+    $api_key = $vars['api_key'];
+    $api_url = $vars['api_url'];
 
     /**
      * Dispatch and handle request here. What follows is a demonstration of one
