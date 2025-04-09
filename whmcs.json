@@ -1,13 +1,13 @@
 {
     "schema": "1.0",
     "type": "whmcs-addons",
-    "name": "sample-addon-module",
+    "name": "ticaga-whmcs",
     "license": "MIT",
     "category": "addon",
     "description": {
-        "name": "Sample Addon Module",
-        "tagline": "An addon module allows you to add additional functionality to WHMCS.",
-        "long": "This sample file demonstrates how an addon module for WHMCS should be structured and exercises all supported functionality.",
+        "name": "Ticaga Module",
+        "tagline": "Connects WHMCS into Ticaga.",
+        "long": "This addon module for WHMCS allows your customers to create and view tickets straight from WHMCS.",
         "features": [
             "Provide both client and admin facing user interfaces",
             "Utilize hook functionality within WHMCS"
@@ -17,16 +17,16 @@
         "filename": "logo.png"
     },
     "support": {
-        "homepage": "https:\/\/www.whmcs.com\/", 
-        "learn_more": "https:\/\/www.whmcs.com\/tour", 
-        "email": "support@whmcs.com", 
-        "support_url": "https:\/\/support.whmcs.com\/",
-        "docs_url": "https:\/\/developers.whmcs.com\/addon-modules\/"
+        "homepage": "https:\/\/www.ticaga.com\/", 
+        "learn_more": "https:\/\/www.docs.ticaga.com\/books\/whmcs", 
+        "email": "integrations@ticaga.com", 
+        "support_url": "https:\/\/support.ticaga.com\/",
+        "docs_url": "https:\/\/www.docs.ticaga.com\/books\/whmcs"
     },
     "authors": [
         {
-            "name": "WHMCS",
-            "homepage": "https:\/\/www.whmcs.com\/"
+            "name": "Ticaga",
+            "homepage": "https:\/\/www.ticaga.com\/"
         }
     ]
 }
