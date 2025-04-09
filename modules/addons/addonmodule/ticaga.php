@@ -184,15 +184,6 @@ function addonmodule_upgrade($vars)
             $table->text('demo2');
         });
     }
-
-    /// Perform SQL schema changes required by the upgrade to version 1.2 of your module
-    if ($currentlyInstalledVersion < 1.2) {
-        $schema = Capsule::schema();
-        // Alter the table and add a new text column called "demo3"
-        $schema->table('mod_addonexample', function($table) {
-            $table->text('demo3');
-        });
-    }
 }
 
 /**
@@ -215,12 +206,8 @@ function addonmodule_output($vars)
     $_lang = $vars['_lang']; // an array of the currently loaded language variables
 
     // Get module configuration parameters
-    $configTextField = $vars['Text Field Name'];
-    $configPasswordField = $vars['Password Field Name'];
-    $configCheckboxField = $vars['Checkbox Field Name'];
-    $configDropdownField = $vars['Dropdown Field Name'];
-    $configRadioField = $vars['Radio Field Name'];
-    $configTextareaField = $vars['Textarea Field Name'];
+    $api_key = $vars['api_key'];
+    $api_url = $vars['api_url'];
 
     // Dispatch and handle request here. What follows is a demonstration of one
     // possible way of handling this using a very basic dispatcher implementation.
