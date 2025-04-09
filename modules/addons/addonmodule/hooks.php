@@ -28,6 +28,19 @@
  *
  * add_hook(string $hookPointName, int $priority, string|array|Closure $function)
  */
+
+add_hook('ClientAdd', 1,  function(array $vars) {
+    try {
+         $firstname = $vars['firstname'];
+         $lastname = $vars['lastname'];
+         $email = $vars['email'];
+    
+         // Create Ticaga Account...
+        
+    } catch (Exception $e) {
+        // Consider logging or reporting the error.
+    }
+
 add_hook('ClientEdit', 1, function(array $params) {
     try {
         // Call the service's function, using the values provided by WHMCS in
