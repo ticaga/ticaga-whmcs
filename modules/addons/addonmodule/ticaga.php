@@ -103,26 +103,25 @@ function addonmodule_activate()
     try {
         Capsule::schema()
             ->create(
-                'mod_addonexample',
+                'mod_ticaga',
                 function ($table) {
                     /** @var \Illuminate\Database\Schema\Blueprint $table */
                     $table->increments('id');
-                    $table->text('demo');
+                    $table->text('api_key');
+                    $table->text('api_key');
                 }
             );
 
         return [
             // Supported values here include: success, error or info
             'status' => 'success',
-            'description' => 'This is a demo module only. '
-                . 'In a real module you might report a success or instruct a '
-                    . 'user how to get started with it here.',
+            'description' => 'Congrations you have installed the Ticaga module for WHMCS.',
         ];
     } catch (\Exception $e) {
         return [
             // Supported values here include: success, error or info
             'status' => "error",
-            'description' => 'Unable to create mod_addonexample: ' . $e->getMessage(),
+            'description' => 'Unable to create mod_ticaga: ' . $e->getMessage(),
         ];
     }
 }
@@ -145,19 +144,18 @@ function addonmodule_deactivate()
     // Undo any database and schema modifications made by your module here
     try {
         Capsule::schema()
-            ->dropIfExists('mod_addonexample');
+            ->dropIfExists('mod_ticaga');
 
         return [
             // Supported values here include: success, error or info
             'status' => 'success',
-            'description' => 'This is a demo module only. '
-                . 'In a real module you might report a success here.',
+            'description' => 'The Ticaga module has been de-activated.',
         ];
     } catch (\Exception $e) {
         return [
             // Supported values here include: success, error or info
             "status" => "error",
-            "description" => "Unable to drop mod_addonexample: {$e->getMessage()}",
+            "description" => "Unable to drop mod_ticaga: {$e->getMessage()}",
         ];
     }
 }
