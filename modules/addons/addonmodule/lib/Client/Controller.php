@@ -1,6 +1,6 @@
 <?php
 
-namespace WHMCS\Module\Addon\AddonModule\Client;
+namespace WHMCS\Module\Addon\TicagaModule\Client;
 
 /**
  * Sample Client Area Controller
