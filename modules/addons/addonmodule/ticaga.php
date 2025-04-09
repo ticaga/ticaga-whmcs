@@ -115,7 +115,7 @@ function addonmodule_activate()
         return [
             // Supported values here include: success, error or info
             'status' => 'success',
-            'description' => 'Congrations you have installed the Ticaga module for WHMCS.',
+            'description' => 'Congratulations you have installed the Ticaga module for WHMCS.',
         ];
     } catch (\Exception $e) {
         return [
